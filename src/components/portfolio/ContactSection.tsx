@@ -23,37 +23,52 @@ import {
 import projectShield from "@/assets/project-shield.jpg";
 import { useRef, useState, useEffect, useMemo, FormEvent } from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import { z } from "zod";
 
 // ---------------------------------------------------------------------------
-// Validation schema
+// Types
 // ---------------------------------------------------------------------------
-const contactSchema = z.object({
-  name: z
-    .string()
-    .trim()
-    .min(2, "Name must be at least 2 characters")
-    .max(100, "Name must be less than 100 characters")
-    .regex(/^[a-zA-ZÀ-ÿ\s'-]+$/, "Name contains invalid characters"),
-  email: z
-    .string()
-    .trim()
-    .email("Invalid email address")
-    .max(255, "Email must be less than 255 characters"),
-  subject: z
-    .string()
-    .trim()
-    .min(3, "Subject must be at least 3 characters")
-    .max(200, "Subject must be less than 200 characters"),
-  message: z
-    .string()
-    .trim()
-    .min(10, "Message must be at least 10 characters")
-    .max(2000, "Message must be less than 2000 characters"),
-});
+type FormValues = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+};
 
-type FormValues = z.infer<typeof contactSchema>;
 type FormErrors = Partial<Record<keyof FormValues, string>>;
+
+// ---------------------------------------------------------------------------
+// Plain validation — no zod, no ambiguous safeParse shapes.
+// ---------------------------------------------------------------------------
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const NAME_RE  = /^[a-zA-Z\u00C0-\u00FF\s'-]+$/;
+
+function validateForm(values: FormValues): FormErrors {
+  const errors: FormErrors = {};
+
+  if (values.name.length < 2)
+    errors.name = "Name must be at least 2 characters";
+  else if (values.name.length > 100)
+    errors.name = "Name must be less than 100 characters";
+  else if (!NAME_RE.test(values.name))
+    errors.name = "Name contains invalid characters";
+
+  if (!EMAIL_RE.test(values.email))
+    errors.email = "Invalid email address";
+  else if (values.email.length > 255)
+    errors.email = "Email must be less than 255 characters";
+
+  if (values.subject.length < 3)
+    errors.subject = "Subject must be at least 3 characters";
+  else if (values.subject.length > 200)
+    errors.subject = "Subject must be less than 200 characters";
+
+  if (values.message.length < 10)
+    errors.message = "Message must be at least 10 characters";
+  else if (values.message.length > 2000)
+    errors.message = "Message must be less than 2000 characters";
+
+  return errors;
+}
 
 // ---------------------------------------------------------------------------
 // Stable particle data – generated once so positions don't re-roll on
@@ -138,7 +153,6 @@ const ContactSection = () => {
         const next = prev - 1;
         if (next <= 0) {
           clearInterval(timer);
-          // Remove the rate-limit error message once the cooldown expires
           setClientErrors((prev) => ({ ...prev, message: undefined }));
         }
         return next;
@@ -149,7 +163,7 @@ const ContactSection = () => {
   }, [rateLimitSecondsLeft]);
 
   // ---------------------------------------------------------------------------
-  // Social links with resolved hrefs (memoised so we don't re-derive each render)
+  // Social links with resolved hrefs
   // ---------------------------------------------------------------------------
   const socialLinks = useMemo(
     () =>
@@ -157,24 +171,30 @@ const ContactSection = () => {
         ...def,
         href: contactInfo.links[def.key],
       })),
-    [] // contactInfo is a static import – safe to omit
+    []
   );
 
   // ---------------------------------------------------------------------------
   // Submit handler
+  //
+  // Formspree's handleFormspreeSubmit MUST receive the raw event —
+  // it calls preventDefault() itself.  We only preventDefault on the
+  // early-return (blocked) paths.
   // ---------------------------------------------------------------------------
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     const formData = new FormData(e.currentTarget);
 
-    // --- honeypot guard (bot detection) -----------------------------------
-    if (formData.get("_gotcha")) return;
+    // --- honeypot guard ---------------------------------------------------
+    if (formData.get("_gotcha")) {
+      e.preventDefault();
+      return;
+    }
 
-    // --- rate-limit guard --------------------------------------------------
+    // --- rate-limit guard -------------------------------------------------
     const now = Date.now();
     const elapsed = now - lastSubmitTime;
     if (elapsed < RATE_LIMIT_MS) {
+      e.preventDefault();
       const secs = Math.ceil((RATE_LIMIT_MS - elapsed) / 1000);
       setRateLimitSecondsLeft(secs);
       setClientErrors((prev) => ({
@@ -187,32 +207,27 @@ const ContactSection = () => {
       return;
     }
 
-    // --- zod validation ----------------------------------------------------
+    // --- validation -------------------------------------------------------
     const formValues: FormValues = {
-      name: formData.get("name") as string,
-      email: formData.get("email") as string,
-      subject: formData.get("subject") as string,
-      message: formData.get("message") as string,
+      name:    (formData.get("name")    as string).trim(),
+      email:   (formData.get("email")   as string).trim(),
+      subject: (formData.get("subject") as string).trim(),
+      message: (formData.get("message") as string).trim(),
     };
 
-    const result = contactSchema.safeParse(formValues);
-    if (!result.success) {
-      const errors: FormErrors = {};
-      result.error.errors.forEach((err) => {
-        const field = err.path[0] as keyof FormErrors;
-        if (!errors[field]) errors[field] = err.message; // keep first error per field
-      });
+    const errors = validateForm(formValues);
+
+    // If there are any keys with a truthy value, validation failed
+    if (Object.values(errors).some(Boolean)) {
+      e.preventDefault();
       setClientErrors(errors);
       return;
     }
 
-    // --- all good – submit to Formspree ------------------------------------
+    // --- all good – hand the raw event to Formspree -----------------------
     setClientErrors({});
     setLastSubmitTime(now);
-
-    // ⚠️  We already called e.preventDefault(), so the native event is consumed.
-    //     Pass the validated plain object instead – Formspree's hook accepts it.
-    handleFormspreeSubmit(formValues);
+    handleFormspreeSubmit(e);
   };
 
   // ---------------------------------------------------------------------------
@@ -228,9 +243,7 @@ const ContactSection = () => {
   // ---------------------------------------------------------------------------
   return (
     <section ref={sectionRef} id="contact" className="py-28 relative overflow-hidden">
-      {/* ------------------------------------------------------------------ */}
-      {/* Background                                                          */}
-      {/* ------------------------------------------------------------------ */}
+      {/* Background */}
       <div className="absolute inset-0">
         <div className="image-gradient-overlay h-full opacity-15">
           <img src={projectShield} alt="" className="w-full h-full object-cover" />
@@ -238,7 +251,7 @@ const ContactSection = () => {
         <div className="absolute inset-0 bg-background/95" />
       </div>
 
-      {/* Floating particles (positions are stable – see particleData above) */}
+      {/* Floating particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {particleData.map((p, i) => (
           <motion.div
@@ -285,9 +298,7 @@ const ContactSection = () => {
       {/* Top divider */}
       <div className="section-divider absolute top-0 left-1/4 right-1/4" />
 
-      {/* ------------------------------------------------------------------ */}
-      {/* Content                                                             */}
-      {/* ------------------------------------------------------------------ */}
+      {/* Content */}
       <div className="container mx-auto px-6 relative z-10">
         {/* Heading */}
         <motion.div
@@ -320,16 +331,14 @@ const ContactSection = () => {
 
         {/* Two-column grid */}
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto mb-14">
-          {/* -------------------------------------------------------------- */}
-          {/* Contact Form                                                   */}
-          {/* -------------------------------------------------------------- */}
+          {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -50, scale: 0.9 }}
             animate={isInView ? { opacity: 1, x: 0, scale: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.1, type: "spring" }}
             className="glass-card-strong p-8 rounded-2xl min-h-[450px] md:min-h-[520px]"
           >
-            {/* --- Success state ----------------------------------------- */}
+            {/* Success state */}
             {state.succeeded ? (
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -354,10 +363,9 @@ const ContactSection = () => {
                 </p>
               </motion.div>
             ) : (
-              /* --- Form ------------------------------------------------- */
+              /* Form */
               <form onSubmit={handleSubmit} className="space-y-6" noValidate>
-                {/* Honeypot – visually hidden (not display:none, so bots
-                    still "see" it but humans never interact with it) */}
+                {/* Honeypot – visually hidden so bots still see it */}
                 <input
                   type="text"
                   name="_gotcha"
@@ -533,9 +541,7 @@ const ContactSection = () => {
             )}
           </motion.div>
 
-          {/* -------------------------------------------------------------- */}
-          {/* Location & Social Links                                        */}
-          {/* -------------------------------------------------------------- */}
+          {/* Location & Social Links */}
           <motion.div
             initial={{ opacity: 0, x: 50, scale: 0.9 }}
             animate={isInView ? { opacity: 1, x: 0, scale: 1 } : {}}
