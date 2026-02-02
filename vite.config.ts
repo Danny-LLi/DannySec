@@ -12,7 +12,7 @@ export default defineConfig({
     },
   },
   plugins: [react()],
-  base: "/DannySec",
+  base: "/DannySec/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
