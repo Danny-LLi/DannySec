@@ -20,10 +20,18 @@ export default defineConfig(({ mode }) => ({
   build: {
     outDir: "dist",
     assetsDir: "assets",
-    // Copy sitemap files to dist
+    chunkSizeWarningLimit: 1000,
     rollupOptions: {
       output: {
         manualChunks: undefined,
+        // Only remove hash from images — keeps hash on CSS/JS for cache busting
+        assetFileNames: (assetInfo) => {
+          const name = assetInfo.name ?? "";
+          if (/\.(jpg|jpeg|png|gif|svg|webp)$/i.test(name)) {
+            return "assets/[name][extname]";
+          }
+          return "assets/[name]-[hash][extname]";
+        },
       },
     },
   },
