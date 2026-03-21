@@ -3,23 +3,215 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Danny Safaya</title>
-    <meta name="description" content="Generated Project" />
-    <meta name="author" content="Danny" />
 
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Danny Safaya" />
-    <meta property="og:description" content=" Generated Project" />
+    <!-- ═══════════════════════════════════════════════════════════════════
+         FAVICON & ICONS
+    ════════════════════════════════════════════════════════════════════ -->
+    <link rel="icon" type="image/x-icon" href="/DannySec/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/DannySec/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/DannySec/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/DannySec/favicon-16x16.png" />
+    <link rel="manifest" href="/DannySec/site.webmanifest" />
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         PRIMARY META (React Helmet overrides these at runtime)
+    ════════════════════════════════════════════════════════════════════ -->
+    <title>Danny Safaya | Security Engineer | Penetration Tester | Germany</title>
+
+    <!-- English description -->
+    <meta
+      name="description"
+      content="Danny Safaya — Security Engineer and Penetration Tester with 3+ years securing telecom infrastructure, payment systems and enterprise networks. Expert in PTES, SIEM, EDR, Zero Trust. PCI-DSS payment gateway (100/100). Top 10% graduate. Based in Germany, EU work-eligible."
+    />
+
+    <!-- German description (Googlebot uses this for de queries) -->
+    <meta
+      name="description:de"
+      content="Danny Safaya – Security Engineer und Penetration Tester mit über 3 Jahren Erfahrung. Spezialist für PTES, SIEM, EDR, Zero-Trust, PCI-DSS. Top-10-%-Absolvent. In Deutschland ansässig, arbeitsberechtigt."
+    />
+
+    <meta
+      name="keywords"
+      content="Danny Safaya, security engineer Germany, penetration tester Germany, Penetration Tester Deutschland, Security Engineer Deutschland, cybersecurity expert, ethical hacker Germany, IT-Sicherheitsexperte, Penetrationstester, red team specialist, PTES, SIEM, SOAR, EDR, zero trust architecture, Zero-Trust-Architektur, PCI-DSS, ISO 27001, OWASP, DSGVO, GDPR, MITRE ATT&CK, Burp Suite, Metasploit, Nmap, Nessus, Python security, Bash PowerShell, DevSecOps, Kubernetes security, API security testing, APT simulation, OSINT, incident response, Syriatel, Assistant Agency, HTBHound, Hack The Box, secure payment gateway, cybersecurity DACH, IT-Sicherheit Deutschland"
+    />
+
+    <meta name="author" content="Danny Safaya" />
+    <link rel="canonical" href="https://danny-lli.github.io/DannySec/" />
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         ROBOTS
+    ════════════════════════════════════════════════════════════════════ -->
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta
+      name="googlebot"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta
+      name="bingbot"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         GEO TARGETING — Germany
+    ════════════════════════════════════════════════════════════════════ -->
+    <meta name="geo.region" content="DE" />
+    <meta name="geo.placename" content="Germany" />
+    <meta name="geo.position" content="51.1657;10.4515" />
+    <meta name="ICBM" content="51.1657,10.4515" />
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         OPEN GRAPH
+    ════════════════════════════════════════════════════════════════════ -->
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/public/favicon.ico" />
+    <meta property="og:url" content="https://danny-lli.github.io/DannySec/" />
+    <meta
+      property="og:title"
+      content="Danny Safaya – Security Engineer & Penetration Tester | Germany"
+    />
+    <meta
+      property="og:description"
+      content="3+ years securing telecom, payment & enterprise systems. PTES · SIEM · EDR · Zero Trust · PCI-DSS (100/100) · Top 10% graduate. Based in Germany."
+    />
+    <meta
+      property="og:image"
+      content="https://danny-lli.github.io/DannySec/og-image.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Danny Safaya – Security Engineer specialising in Penetration Testing, Germany"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:site_name"
+      content="Danny Safaya – Security Engineer & Penetration Testing Expert"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="de_DE" />
+    <meta
+      property="og:see_also"
+      content="https://www.linkedin.com/in/danny-safaya-61302a218/"
+    />
 
-  <!--<meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Danny" />
-    <meta name="twitter:image" content="/public/favicon.ico" />-->
+    <!-- ═══════════════════════════════════════════════════════════════════
+         TWITTER CARD
+    ════════════════════════════════════════════════════════════════════ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@DannySafaya" />
+    <meta name="twitter:creator" content="@DannySafaya" />
+    <meta
+      name="twitter:title"
+      content="Danny Safaya | Security Engineer | Penetration Tester | Germany"
+    />
+    <meta
+      name="twitter:description"
+      content="Security Engineer · 3+ years · PTES, SIEM, EDR, Zero Trust, PCI-DSS · Top 10% graduate · Based in Germany."
+    />
+    <meta
+      name="twitter:image"
+      content="https://danny-lli.github.io/DannySec/twitter-card.jpg"
+    />
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         HREFLANG — Bilingual EN / DE
+    ════════════════════════════════════════════════════════════════════ -->
+    <link rel="alternate" hreflang="en" href="https://danny-lli.github.io/DannySec/" />
+    <link rel="alternate" hreflang="de" href="https://danny-lli.github.io/DannySec/de" />
+    <link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/" />
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         MOBILE & THEME
+    ════════════════════════════════════════════════════════════════════ -->
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="msapplication-TileColor" content="#0a0a0a" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Danny Safaya – Security Engineer" />
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         MISC SEO SIGNALS
+    ════════════════════════════════════════════════════════════════════ -->
+    <meta name="language" content="English, Deutsch" />
+    <meta name="copyright" content="Copyright 2025 Danny Safaya. All rights reserved." />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="rating" content="General" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         PERFORMANCE
+    ════════════════════════════════════════════════════════════════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         JSON-LD — Person (pre-render fallback for crawlers)
+    ════════════════════════════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Danny Safaya",
+      "jobTitle": "Security Engineer & Penetration Testing Expert",
+      "description": "Security Engineer and Penetration Tester with 3+ years securing telecom infrastructure, payment systems and enterprise networks. Expert in PTES, SIEM, EDR, Zero Trust. PCI-DSS payment gateway (100/100). Top 10% Software Engineering graduate. Based in Germany.",
+      "url": "https://danny-lli.github.io/DannySec",
+      "image": "https://danny-lli.github.io/DannySec/profile-photo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "DE"
+      },
+      "sameAs": [
+        "https://github.com/Danny-LLi",
+        "https://www.linkedin.com/in/danny-safaya-61302a218/",
+        "https://medium.com/@dannysafaya",
+        "https://app.hackthebox.com/profile/1416013"
+      ],
+      "knowsAbout": [
+        "Penetration Testing (PTES)", "Red Teaming", "APT Simulation",
+        "Social Engineering", "OSINT", "SAST/DAST",
+        "SIEM", "SOAR", "EDR", "DLP", "WAF", "IDS/IPS", "NAC",
+        "Zero Trust Architecture", "Incident Response", "ISMS",
+        "Burp Suite", "Metasploit", "Nmap", "Nessus", "Acunetix", "Wireshark",
+        "Python", "Bash", "PowerShell", "PHP", "DevSecOps", "Kubernetes",
+        "ISO 27001", "PCI-DSS", "OWASP", "HIPAA", "GDPR", "DSGVO", "MITRE ATT&CK"
+      ],
+      "knowsLanguage": [
+        {"@type": "Language", "name": "English", "description": "B2 certified"},
+        {"@type": "Language", "name": "German", "alternateName": "Deutsch", "description": "B1 telc exam completed (2026); A2 certified"}
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD — WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Danny Safaya – Security Engineer Portfolio",
+      "url": "https://danny-lli.github.io/DannySec",
+      "description": "Professional portfolio of Danny Safaya, Security Engineer and Penetration Testing Expert based in Germany. 3+ years securing telecom, payment and enterprise systems.",
+      "inLanguage": ["en", "de"],
+      "author": {"@type": "Person", "name": "Danny Safaya"}
+    }
+    </script>
   </head>
 
   <body>
+    <noscript>
+      <div style="padding:20px;text-align:center;background:#fff3cd;color:#856404;">
+        <strong>JavaScript Required / JavaScript erforderlich:</strong>
+        This website requires JavaScript. Please enable it in your browser. /
+        Diese Website erfordert JavaScript. Bitte aktivieren Sie es in Ihrem Browser.
+      </div>
+    </noscript>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

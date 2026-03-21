@@ -108,7 +108,6 @@ const EducationSection = () => {
                     className="text-primary hover:text-accent flex items-center gap-1 transition-colors"
                   >
                     {edu.institution}
-                    <ExternalLink className="w-3 h-3" />
                   </a>
                 </div>
               </div>

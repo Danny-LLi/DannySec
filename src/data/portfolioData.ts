@@ -1,11 +1,9 @@
 export const contactInfo = {
   name: "Danny Safaya",
   location: {
-    de: "München, Deutschland",
-    en: "Munich, Germany",
+    de: "Deutschland",
+    en: "Germany",
   },
-  phone: "+49 176 20244368",
-  email: "dannysafaya@gmail.com",
   links: {
     github: "https://github.com/Danny-LLi",
     hackthebox: "https://app.hackthebox.com/profile/1416013",
@@ -117,7 +115,7 @@ export const experience = [
         "Documentation of security and compliance issues",
       ],
     },
-    certificateLink: "Syriatel_Certificate_Link",
+    //certificateLink: "Syriatel_Certificate_Link",
   },
   {
     company: "Assistant Agency",
@@ -232,7 +230,6 @@ export const education = [
       start: "Apr 2023",
       end: null,
     },
-    website: "https://www.svuonline.org/",
     recognized: true,
   },
   {
@@ -249,7 +246,6 @@ export const education = [
       start: "Okt 2018",
       end: "Feb 2023",
     },
-    website: "https://spu.edu.sy/",
     grade: "74.4%",
     recognized: true,
   },
@@ -425,8 +421,8 @@ export const languages = [
       en: "German",
     },
     level: {
-      de: "A2 (Zertifiziert), derzeit in Weiterbildung",
-      en: "A2 (Certified), currently in training",
+      de: "B1 telc-Prüfung abgelegt (März 2026) · A2 zertifiziert",
+      en: "B1 telc exam completed (Mar 2026) · A2 certified",
     },
   },
 ];
@@ -556,6 +552,6 @@ export const certifications = [
     issuer: "Cybrary",
     issued: "Mar 2023",
     credentialId: "CC-aa63165-0576-493f-8064-acac3e7a4662",
-    credentialUrl: "https://www.cybrary.it/",
+    credentialUrl: "https://drive.google.com/file/d/1-MDC37Z4tEP7eSc_EYTQYkqanKaAh2oq/view?usp=share_link",
   },
 ];

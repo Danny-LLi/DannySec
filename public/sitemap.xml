@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       Danny Safaya — Security Engineer & Penetration Tester Portfolio
+       https://danny-lli.github.io/DannySec/
+       Bilingual: English (en) + German (de)
+  ═══════════════════════════════════════════════════════════════════ -->
+
+  <!-- Home -->
+  <url>
+    <loc>https://danny-lli.github.io/DannySec/</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/" />
+    <image:image>
+      <image:loc>https://danny-lli.github.io/DannySec/og-image.jpg</image:loc>
+      <image:title>Danny Safaya – Security Engineer &amp; Penetration Tester | Germany</image:title>
+      <image:caption>Professional cybersecurity expert: PTES, SIEM, EDR, Zero Trust, PCI-DSS. Based in Germany.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://danny-lli.github.io/DannySec/profile-photo.png</image:loc>
+      <image:title>Danny Safaya – Profile Photo</image:title>
+      <image:caption>Security Engineer and Penetration Tester based in Germany.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://danny-lli.github.io/DannySec/#about</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/#about" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de#about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/#about" />
+  </url>
+
+  <!-- Skills -->
+  <url>
+    <loc>https://danny-lli.github.io/DannySec/#skills</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/#skills" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de#skills" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/#skills" />
+  </url>
+
+  <!-- Experience -->
+  <url>
+    <loc>https://danny-lli.github.io/DannySec/#experience</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/#experience" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de#experience" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/#experience" />
+  </url>
+
+  <!-- Projects -->
+  <url>
+    <loc>https://danny-lli.github.io/DannySec/#projects</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/#projects" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de#projects" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/#projects" />
+    <image:image>
+      <image:loc>https://danny-lli.github.io/DannySec/assets/project-payment.jpg</image:loc>
+      <image:title>Secure E-Payment Gateway – PCI-DSS Compliant | Sicheres E-Payment-Gateway – PCI-DSS konform</image:title>
+      <image:caption>PCI-DSS-compliant tokenisation architecture blocking 95%+ attack vectors. 1st place, perfect score 100/100. | PCI-DSS-konformes Tokenisierungs-Gateway, das über 95 % Angriffsvektoren abwehrt. Platz 1, 100/100.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://danny-lli.github.io/DannySec/assets/project-htb.jpg</image:loc>
+      <image:title>HTBHound – Open-Source Hack The Box Recon Tool</image:title>
+      <image:caption>Automated subdomain and hidden directory discovery tool for Hack The Box environments.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Education -->
+  <url>
+    <loc>https://danny-lli.github.io/DannySec/#education</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/#education" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de#education" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/#education" />
+  </url>
+
+  <!-- Certifications -->
+  <url>
+    <loc>https://danny-lli.github.io/DannySec/#certifications</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/#certifications" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de#certifications" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/#certifications" />
+  </url>
+
+  <!-- Volunteer -->
+  <url>
+    <loc>https://danny-lli.github.io/DannySec/#volunteer</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/#volunteer" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de#volunteer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/#volunteer" />
+  </url>
+
+  <!-- Awards -->
+  <url>
+    <loc>https://danny-lli.github.io/DannySec/#awards</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/#awards" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de#awards" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/#awards" />
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://danny-lli.github.io/DannySec/#contact</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/#contact" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de#contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/#contact" />
+  </url>
+
+</urlset>

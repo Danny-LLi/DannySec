@@ -1,14 +1,64 @@
+# robots.txt — Danny Safaya Security Engineer Portfolio
+# https://danny-lli.github.io/DannySec/
+# Bilingual: English + German / Englisch + Deutsch
+
+# ── Allow all compliant crawlers ──────────────────────────────────────
+User-agent: *
+Allow: /
+
 User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-User-agent: Twitterbot
+User-agent: Slurp
 Allow: /
 
-User-agent: facebookexternalhit
+User-agent: DuckDuckBot
 Allow: /
 
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# ── Block aggressive SEO-tool scrapers ────────────────────────────────
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+User-agent: Turnitinbot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+# ── Crawl delay for generic bots ──────────────────────────────────────
 User-agent: *
-Allow: /
+Crawl-delay: 1
+
+# ── Sitemaps ──────────────────────────────────────────────────────────
+Sitemap: https://danny-lli.github.io/DannySec/sitemap.xml
+Sitemap: https://danny-lli.github.io/DannySec/sitemap-images.xml
+
+# ── Canonical host ────────────────────────────────────────────────────
+Host: https://danny-lli.github.io

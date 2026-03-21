@@ -1,11 +1,14 @@
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { Award, ExternalLink, Calendar, Shield, Sparkles } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { certifications } from "@/data/portfolioData";
 import { Badge } from "../ui/badge";
+import { useRef } from "react";
 
 const CertificationsSection = () => {
   const { language } = useLanguage();
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: true, amount: 0.1 });
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -135,7 +138,7 @@ const CertificationsSection = () => {
   };
 
   return (
-    <section id="certifications" className="py-20 sm:py-28 relative overflow-hidden">
+    <section ref={sectionRef} className="py-20 sm:py-28 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Floating particles */}
@@ -219,8 +222,7 @@ const CertificationsSection = () => {
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
           className="text-center mb-16 sm:mb-20"
         >
@@ -247,8 +249,7 @@ const CertificationsSection = () => {
           {/* Stats bar */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.3 }}
             className="flex flex-wrap justify-center gap-6 mt-10"
           >
@@ -266,8 +267,7 @@ const CertificationsSection = () => {
         <motion.div
           variants={containerVariants}
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
+          animate={isInView ? "visible" : "hidden"}
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
             {certifications.map((cert, index) => (

@@ -25,7 +25,7 @@ const translations = {
     // Hero Section
     "hero.greeting": "Hallo, ich bin",
     "hero.role": "Security Engineer",
-    "hero.location": "München, Deutschland",
+    "hero.location": "Deutschland",
     "hero.description": "Mit einem Bachelor-Abschluss in Software Engineering, rangiert unter den besten 10% von 120 Studierenden. Über 3 Jahre Erfahrung im Bereich Penetration Testing und mehr als 2 Jahre Führungserfahrung.",
     "hero.cta": "Kontakt aufnehmen",
     "hero.view_work": "Projekte ansehen",
@@ -74,7 +74,7 @@ const translations = {
     "languages.english": "Englisch",
     "languages.german": "Deutsch",
     "languages.english_level": "B2 (Zertifiziert), Tendenz zu C1",
-    "languages.german_level": "A2 (Zertifiziert), in Weiterbildung",
+    "languages.german_level": "B1 telc-Prüfung abgelegt (März 2026) · A2 zertifiziert",
 
     // Footer
     "footer.rights": "Alle Rechte vorbehalten.",
@@ -100,7 +100,7 @@ const translations = {
     // Hero Section
     "hero.greeting": "Hello, I'm",
     "hero.role": "Security Engineer",
-    "hero.location": "Munich, Germany",
+    "hero.location": "Germany",
     "hero.description": "With a Bachelor's degree in Software Engineering, ranked among the top 10% of 120 students. Over 3 years of experience in Penetration Testing and more than 2 years of leadership experience.",
     "hero.cta": "Get in Touch",
     "hero.view_work": "View Projects",
@@ -149,7 +149,7 @@ const translations = {
     "languages.english": "English",
     "languages.german": "German",
     "languages.english_level": "B2 (Certified), tending to C1",
-    "languages.german_level": "A2 (Certified), currently in training",
+    "languages.german_level": "B1 telc exam completed (Mar 2026) · A2 certified",
 
     // Footer
     "footer.rights": "All rights reserved.",

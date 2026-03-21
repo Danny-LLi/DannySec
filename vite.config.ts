@@ -1,21 +1,31 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
+import { fileURLToPath } from "url";
 
-// https://vitejs.dev/config/
-export default defineConfig({
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
-    hmr: {
-      overlay: false,
-    },
   },
   plugins: [react()],
-  base: "/DannySec/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
-});
+  base: mode === "production" ? "/DannySec/" : "/",
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+    // Copy sitemap files to dist
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
+  publicDir: "public", // Ensures public/ files are copied to dist/
+}));

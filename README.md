@@ -3,7 +3,7 @@
 <div align="center">
   <img src="https://img.shields.io/badge/Status-Live-success?style=for-the-badge&logo=github" alt="Status Live">
   <img src="https://img.shields.io/badge/Security-Focused-blue?style=for-the-badge&logo=shiled" alt="Security Focused">
-  <img src="https://img.shields.io/badge/Location-Munich%2C%20DE-orange?style=for-the-badge&logo=googlemaps" alt="Location">
+  <img src="https://img.shields.io/badge/Location-Germany%2C%20DE-orange?style=for-the-badge&logo=googlemaps" alt="Location">
 </div>
 
 ---

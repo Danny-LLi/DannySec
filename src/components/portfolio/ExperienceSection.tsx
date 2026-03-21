@@ -173,7 +173,7 @@ const ExperienceSection = () => {
                   ))}
                 </ul>
                 
-                {job.certificateLink && (
+                {/*job.certificateLink && (
                   <motion.a
                     href={job.certificateLink}
                     target="_blank"
@@ -184,7 +184,7 @@ const ExperienceSection = () => {
                     <ExternalLink className="w-4 h-4" />
                     {language === "de" ? "Zertifikat ansehen" : "View Certificate"}
                   </motion.a>
-                )}
+                )*/}
               </motion.div>
             </motion.div>
           ))}

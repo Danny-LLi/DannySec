@@ -1,0 +1,137 @@
+/**
+ * Bilingual Sitemap Generator — Danny Safaya Portfolio
+ * Generates XML sitemaps for EN + DE with hreflang annotations
+ * Run: node scripts/generate-sitemap.js
+ */
+
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const DOMAIN = "https://danny-lli.github.io/DannySec";
+const TODAY = new Date().toISOString().split("T")[0];
+const OUTPUT_PATH = path.join(__dirname, "../public/sitemap.xml");
+const IMAGE_OUTPUT_PATH = path.join(__dirname, "../public/sitemap-images.xml");
+
+const urls = [
+  { loc: "/",                 priority: "1.0",  changefreq: "weekly"  },
+  { loc: "/#about",           priority: "0.9",  changefreq: "monthly" },
+  { loc: "/#skills",          priority: "0.85", changefreq: "monthly" },
+  { loc: "/#experience",      priority: "0.95", changefreq: "monthly" },
+  { loc: "/#projects",        priority: "0.9",  changefreq: "weekly"  },
+  { loc: "/#education",       priority: "0.75", changefreq: "yearly"  },
+  { loc: "/#certifications",  priority: "0.8",  changefreq: "monthly" },
+  { loc: "/#volunteer",       priority: "0.6",  changefreq: "yearly"  },
+  { loc: "/#awards",          priority: "0.65", changefreq: "yearly"  },
+  { loc: "/#contact",         priority: "0.9",  changefreq: "monthly" },
+];
+
+const generateSitemap = () => {
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n';
+  xml += '        xmlns:xhtml="http://www.w3.org/1999/xhtml"\n';
+  xml += '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n\n';
+
+  urls.forEach((url) => {
+    xml += "  <url>\n";
+    xml += `    <loc>${DOMAIN}${url.loc}</loc>\n`;
+    xml += `    <lastmod>${TODAY}</lastmod>\n`;
+    xml += `    <changefreq>${url.changefreq}</changefreq>\n`;
+    xml += `    <priority>${url.priority}</priority>\n`;
+    // EN hreflang
+    xml += `    <xhtml:link rel="alternate" hreflang="en"        href="${DOMAIN}${url.loc}" />\n`;
+    // DE hreflang
+    xml += `    <xhtml:link rel="alternate" hreflang="de"        href="${DOMAIN}/de${url.loc}" />\n`;
+    xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${DOMAIN}${url.loc}" />\n`;
+    xml += "  </url>\n\n";
+  });
+
+  xml += "</urlset>";
+  return xml;
+};
+
+const generateImageSitemap = () => {
+  const pages = [
+    {
+      url: "/",
+      images: [
+        {
+          loc: "/og-image.jpg",
+          title: "Danny Safaya – Security Engineer & Penetration Tester | Germany / Deutschland",
+          caption:
+            "Professional cybersecurity portfolio: PTES, SIEM, EDR, Zero Trust, PCI-DSS. | Professionelles Cybersecurity-Portfolio.",
+        },
+        {
+          loc: "/profile-photo.png",
+          title: "Danny Safaya – Profile Photo | Profilfoto",
+          caption:
+            "Security Engineer und Penetration Tester in Deutschland.",
+        },
+      ],
+    },
+    {
+      url: "/#projects",
+      images: [
+        {
+          loc: "/assets/project-payment.jpg",
+          title: "Secure E-Payment Gateway – PCI-DSS | Sicheres E-Payment-Gateway – PCI-DSS",
+          caption:
+            "PCI-DSS-compliant tokenisation blocking 95%+ attacks. 1st place, 100/100. | Platz 1, 100/100.",
+        },
+        {
+          loc: "/assets/project-htb.jpg",
+          title: "HTBHound – Hack The Box Enumeration Tool",
+          caption:
+            "Open-source subdomain & directory discovery for Hack The Box. | Open-Source Reconnaissance-Tool für HackTheBox.",
+        },
+        {
+          loc: "/assets/project-network.jpg",
+          title: "Network Security – Penetration Testing | Netzwerksicherheit",
+          caption: "Enterprise network security and penetration testing projects.",
+        },
+        {
+          loc: "/assets/project-code.jpg",
+          title: "Security Code Review & Automation | Code-Review & Automatisierung",
+          caption:
+            "Custom exploit tools and automation scripts in Python, Bash, PowerShell.",
+        },
+      ],
+    },
+  ];
+
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n';
+  xml += '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n\n';
+
+  pages.forEach((page) => {
+    xml += "  <url>\n";
+    xml += `    <loc>${DOMAIN}${page.url}</loc>\n`;
+    page.images.forEach((img) => {
+      xml += "    <image:image>\n";
+      xml += `      <image:loc>${DOMAIN}${img.loc}</image:loc>\n`;
+      xml += `      <image:title>${img.title}</image:title>\n`;
+      xml += `      <image:caption>${img.caption}</image:caption>\n`;
+      xml += "    </image:image>\n";
+    });
+    xml += "  </url>\n\n";
+  });
+
+  xml += "</urlset>";
+  return xml;
+};
+
+try {
+  fs.writeFileSync(OUTPUT_PATH, generateSitemap());
+  fs.writeFileSync(IMAGE_OUTPUT_PATH, generateImageSitemap());
+  console.log("✅ Sitemaps generated successfully!");
+  console.log(`   Main sitemap:  ${OUTPUT_PATH}`);
+  console.log(`   Image sitemap: ${IMAGE_OUTPUT_PATH}`);
+  console.log(`   Domain:        ${DOMAIN}`);
+  console.log(`   Date:          ${TODAY}`);
+} catch (err) {
+  console.error("❌ Error generating sitemaps:", err);
+  process.exit(1);
+}
