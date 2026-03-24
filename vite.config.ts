@@ -16,7 +16,7 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: mode === "production" ? "/DannySec/" : "/",
+  base: mode === "production" ? (process.env.VITE_BASE_PATH ?? "/DannySec/") : "/",
   build: {
     outDir: "dist",
     assetsDir: "assets",
