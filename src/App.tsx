@@ -14,7 +14,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/DannySec">
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <SEO section="home" />
         <Routes>
           <Route path="/" element={<Index />} />
