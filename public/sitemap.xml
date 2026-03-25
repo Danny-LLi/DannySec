@@ -5,26 +5,26 @@
 
   <!-- ══════════════════════════════════════════════════════════════════
        Danny Safaya — Security Engineer & Penetration Tester Portfolio
-       https://danny-lli.github.io/DannySec/
+       https://portfolio.danny-sec.workers.dev/
        Bilingual: English (en) + German (de)
   ═══════════════════════════════════════════════════════════════════ -->
 
   <!-- Home -->
   <url>
-    <loc>https://danny-lli.github.io/DannySec/</loc>
+    <loc>https://portfolio.danny-sec.workers.dev/</loc>
     <lastmod>2025-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/" />
-    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/" />
+    <xhtml:link rel="alternate" hreflang="en"        href="https://portfolio.danny-sec.workers.dev/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://portfolio.danny-sec.workers.dev/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio.danny-sec.workers.dev/" />
     <image:image>
-      <image:loc>https://danny-lli.github.io/DannySec/og-image.jpg</image:loc>
+      <image:loc>https://portfolio.danny-sec.workers.dev/og-image.jpg</image:loc>
       <image:title>Danny Safaya – Security Engineer &amp; Penetration Tester | Germany</image:title>
       <image:caption>Professional cybersecurity expert: PTES, SIEM, EDR, Zero Trust, PCI-DSS. Based in Germany.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://danny-lli.github.io/DannySec/profile-photo.png</image:loc>
+      <image:loc>https://portfolio.danny-sec.workers.dev/profile-photo.png</image:loc>
       <image:title>Danny Safaya – Profile Photo</image:title>
       <image:caption>Security Engineer and Penetration Tester based in Germany.</image:caption>
     </image:image>
@@ -32,53 +32,53 @@
 
   <!-- About -->
   <url>
-    <loc>https://danny-lli.github.io/DannySec/#about</loc>
+    <loc>https://portfolio.danny-sec.workers.dev/#about</loc>
     <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/#about" />
-    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de#about" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/#about" />
+    <xhtml:link rel="alternate" hreflang="en"        href="https://portfolio.danny-sec.workers.dev/?lang=en#about" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://portfolio.danny-sec.workers.dev/?lang=de#about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio.danny-sec.workers.dev/#about" />
   </url>
 
   <!-- Skills -->
   <url>
-    <loc>https://danny-lli.github.io/DannySec/#skills</loc>
+    <loc>https://portfolio.danny-sec.workers.dev/#skills</loc>
     <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/#skills" />
-    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de#skills" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/#skills" />
+    <xhtml:link rel="alternate" hreflang="en"        href="https://portfolio.danny-sec.workers.dev/?lang=en#skills" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://portfolio.danny-sec.workers.dev/?lang=de#skills" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio.danny-sec.workers.dev/#skills" />
   </url>
 
   <!-- Experience -->
   <url>
-    <loc>https://danny-lli.github.io/DannySec/#experience</loc>
+    <loc>https://portfolio.danny-sec.workers.dev/#experience</loc>
     <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/#experience" />
-    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de#experience" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/#experience" />
+    <xhtml:link rel="alternate" hreflang="en"        href="https://portfolio.danny-sec.workers.dev/?lang=en#experience" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://portfolio.danny-sec.workers.dev/?lang=de#experience" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio.danny-sec.workers.dev/#experience" />
   </url>
 
   <!-- Projects -->
   <url>
-    <loc>https://danny-lli.github.io/DannySec/#projects</loc>
+    <loc>https://portfolio.danny-sec.workers.dev/#projects</loc>
     <lastmod>2025-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/#projects" />
-    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de#projects" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/#projects" />
+    <xhtml:link rel="alternate" hreflang="en"        href="https://portfolio.danny-sec.workers.dev/?lang=en#projects" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://portfolio.danny-sec.workers.dev/?lang=de#projects" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio.danny-sec.workers.dev/#projects" />
     <image:image>
-      <image:loc>https://danny-lli.github.io/DannySec/assets/project-payment.jpg</image:loc>
+      <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-payment.jpg</image:loc>
       <image:title>Secure E-Payment Gateway – PCI-DSS Compliant | Sicheres E-Payment-Gateway – PCI-DSS konform</image:title>
       <image:caption>PCI-DSS-compliant tokenisation architecture blocking 95%+ attack vectors. 1st place, perfect score 100/100. | PCI-DSS-konformes Tokenisierungs-Gateway, das über 95 % Angriffsvektoren abwehrt. Platz 1, 100/100.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://danny-lli.github.io/DannySec/assets/project-htb.jpg</image:loc>
+      <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-htb.jpg</image:loc>
       <image:title>HTBHound – Open-Source Hack The Box Recon Tool</image:title>
       <image:caption>Automated subdomain and hidden directory discovery tool for Hack The Box environments.</image:caption>
     </image:image>
@@ -86,57 +86,57 @@
 
   <!-- Education -->
   <url>
-    <loc>https://danny-lli.github.io/DannySec/#education</loc>
+    <loc>https://portfolio.danny-sec.workers.dev/#education</loc>
     <lastmod>2025-06-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/#education" />
-    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de#education" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/#education" />
+    <xhtml:link rel="alternate" hreflang="en"        href="https://portfolio.danny-sec.workers.dev/?lang=en#education" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://portfolio.danny-sec.workers.dev/?lang=de#education" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio.danny-sec.workers.dev/#education" />
   </url>
 
   <!-- Certifications -->
   <url>
-    <loc>https://danny-lli.github.io/DannySec/#certifications</loc>
+    <loc>https://portfolio.danny-sec.workers.dev/#certifications</loc>
     <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/#certifications" />
-    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de#certifications" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/#certifications" />
+    <xhtml:link rel="alternate" hreflang="en"        href="https://portfolio.danny-sec.workers.dev/?lang=en#certifications" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://portfolio.danny-sec.workers.dev/?lang=de#certifications" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio.danny-sec.workers.dev/#certifications" />
   </url>
 
   <!-- Volunteer -->
   <url>
-    <loc>https://danny-lli.github.io/DannySec/#volunteer</loc>
+    <loc>https://portfolio.danny-sec.workers.dev/#volunteer</loc>
     <lastmod>2025-06-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/#volunteer" />
-    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de#volunteer" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/#volunteer" />
+    <xhtml:link rel="alternate" hreflang="en"        href="https://portfolio.danny-sec.workers.dev/?lang=en#volunteer" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://portfolio.danny-sec.workers.dev/?lang=de#volunteer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio.danny-sec.workers.dev/#volunteer" />
   </url>
 
   <!-- Awards -->
   <url>
-    <loc>https://danny-lli.github.io/DannySec/#awards</loc>
+    <loc>https://portfolio.danny-sec.workers.dev/#awards</loc>
     <lastmod>2025-06-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.65</priority>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/#awards" />
-    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de#awards" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/#awards" />
+    <xhtml:link rel="alternate" hreflang="en"        href="https://portfolio.danny-sec.workers.dev/?lang=en#awards" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://portfolio.danny-sec.workers.dev/?lang=de#awards" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio.danny-sec.workers.dev/#awards" />
   </url>
 
   <!-- Contact -->
   <url>
-    <loc>https://danny-lli.github.io/DannySec/#contact</loc>
+    <loc>https://portfolio.danny-sec.workers.dev/#contact</loc>
     <lastmod>2025-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://danny-lli.github.io/DannySec/#contact" />
-    <xhtml:link rel="alternate" hreflang="de"        href="https://danny-lli.github.io/DannySec/de#contact" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://danny-lli.github.io/DannySec/#contact" />
+    <xhtml:link rel="alternate" hreflang="en"        href="https://portfolio.danny-sec.workers.dev/?lang=en#contact" />
+    <xhtml:link rel="alternate" hreflang="de"        href="https://portfolio.danny-sec.workers.dev/?lang=de#contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio.danny-sec.workers.dev/#contact" />
   </url>
 
 </urlset>

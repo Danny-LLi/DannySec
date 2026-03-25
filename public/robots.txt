@@ -1,5 +1,5 @@
 # robots.txt — Danny Safaya Security Engineer Portfolio
-# https://danny-lli.github.io/DannySec/
+# https://portfolio.danny-sec.workers.dev/
 # Bilingual: English + German / Englisch + Deutsch
 
 # ── Allow all compliant crawlers ──────────────────────────────────────
@@ -57,8 +57,8 @@ User-agent: *
 Crawl-delay: 1
 
 # ── Sitemaps ──────────────────────────────────────────────────────────
-Sitemap: https://danny-lli.github.io/DannySec/sitemap.xml
-Sitemap: https://danny-lli.github.io/DannySec/sitemap-images.xml
+Sitemap: https://portfolio.danny-sec.workers.dev/sitemap.xml
+Sitemap: https://portfolio.danny-sec.workers.dev/sitemap-images.xml
 
 # ── Canonical host ────────────────────────────────────────────────────
-Host: https://danny-lli.github.io
+Host: https://portfolio.danny-sec.workers.dev

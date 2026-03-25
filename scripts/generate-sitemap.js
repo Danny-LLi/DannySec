@@ -11,7 +11,7 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const DOMAIN = "https://danny-lli.github.io/DannySec";
+const DOMAIN = "https://portfolio.danny-sec.workers.dev";
 const TODAY = new Date().toISOString().split("T")[0];
 const OUTPUT_PATH = path.join(__dirname, "../public/sitemap.xml");
 const IMAGE_OUTPUT_PATH = path.join(__dirname, "../public/sitemap-images.xml");
@@ -30,7 +30,7 @@ const urls = [
 ];
 
 const generateSitemap = () => {
-  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  let xml = '<?xml version="1.0" encoding="UTF-8">\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n';
   xml += '        xmlns:xhtml="http://www.w3.org/1999/xhtml"\n';
   xml += '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n\n';
@@ -41,11 +41,15 @@ const generateSitemap = () => {
     xml += `    <lastmod>${TODAY}</lastmod>\n`;
     xml += `    <changefreq>${url.changefreq}</changefreq>\n`;
     xml += `    <priority>${url.priority}</priority>\n`;
-    // EN hreflang
-    xml += `    <xhtml:link rel="alternate" hreflang="en"        href="${DOMAIN}${url.loc}" />\n`;
-    // DE hreflang
-    xml += `    <xhtml:link rel="alternate" hreflang="de"        href="${DOMAIN}/de${url.loc}" />\n`;
-    xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${DOMAIN}${url.loc}" />\n`;
+    // EN hreflang — append ?lang=en before any hash
+    const enHref = url.loc === "/" ? `${DOMAIN}/?lang=en` : `${DOMAIN}/?lang=en${url.loc}`;
+    // DE hreflang — same pattern with lang=de
+    const deHref = url.loc === "/" ? `${DOMAIN}/?lang=de` : `${DOMAIN}/?lang=de${url.loc}`;
+    // x-default — no lang param
+    const defaultHref = `${DOMAIN}${url.loc}`;
+    xml += `    <xhtml:link rel="alternate" hreflang="en"        href="${enHref}" />\n`;
+    xml += `    <xhtml:link rel="alternate" hreflang="de"        href="${deHref}" />\n`;
+    xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${defaultHref}" />\n`;
     xml += "  </url>\n\n";
   });
 
@@ -102,7 +106,7 @@ const generateImageSitemap = () => {
     },
   ];
 
-  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  let xml = '<?xml version="1.0" encoding="UTF-8">\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n';
   xml += '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n\n';
 

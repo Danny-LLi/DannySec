@@ -85,7 +85,7 @@ const IndexContent = () => {
       <SEO
         section={activeSection}
         lang={language as "en" | "de"}
-        url={`https://danny-lli.github.io/DannySec${location.hash}`}
+        url={`https://portfolio.danny-sec.workers.dev${location.hash}`}
       />
 
       <div className="min-h-screen bg-background">

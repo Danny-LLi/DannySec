@@ -2,7 +2,7 @@
  * Advanced Bilingual SEO Configuration — Danny Safaya
  * Security Engineer · Penetration Tester · Red Team Specialist
  * Target: DACH Region (DE/AT/CH) + International English-speaking markets
- * URL: https://danny-lli.github.io/DannySec/
+ * URL: https://portfolio.danny-sec.workers.dev/
  *
  * Strategy:
  *  - Every section ships BOTH an `en` and a `de` variant
@@ -18,7 +18,7 @@ export const seoConfig = {
     name: "Danny Safaya – Security Engineer & Penetration Testing Expert",
     nameDE:
       "Danny Safaya – Security Engineer & Penetration-Testing-Experte",
-    url: "https://danny-lli.github.io/DannySec",
+    url: "https://portfolio.danny-sec.workers.dev",
     author: "Danny Safaya",
     locale: "en_US",
     alternateLocale: "de_DE",
@@ -125,7 +125,7 @@ export const seoConfig = {
         "Danny Safaya – Security Engineer & Penetration Tester | Germany",
       description:
         "3+ years securing telecom, payment & enterprise systems. PTES · SIEM · EDR · Zero Trust · PCI-DSS (100/100) · Top 10% graduate. Germany.",
-      image: "https://danny-lli.github.io/DannySec/og-image.jpg",
+      image: "https://portfolio.danny-sec.workers.dev/og-image.jpg",
       imageAlt:
         "Danny Safaya – Security Engineer specialising in Penetration Testing, Germany",
     },
@@ -136,7 +136,7 @@ export const seoConfig = {
       title: "Danny Safaya | Security Engineer | Penetration Tester | Germany",
       description:
         "Security Engineer · 3+ years · PTES, SIEM, EDR, Zero Trust, PCI-DSS · Top 10% graduate · Based in Germany.",
-      image: "https://danny-lli.github.io/DannySec/twitter-card.jpg",
+      image: "https://portfolio.danny-sec.workers.dev/twitter-card.jpg",
     },
   },
 
@@ -477,8 +477,8 @@ export const seoConfig = {
       jobTitle: "Security Engineer & Penetration Testing Expert",
       description:
         "Security Engineer and Penetration Tester with 3+ years of hands-on experience securing telecom infrastructure, payment systems and enterprise networks. Led security team at Syriatel, built PCI-DSS-compliant payment gateway (100/100). Top 10% Software Engineering graduate. Based in Germany.",
-      url: "https://danny-lli.github.io/DannySec",
-      image: "https://danny-lli.github.io/DannySec/profile-photo.png",
+      url: "https://portfolio.danny-sec.workers.dev",
+      image: "https://portfolio.danny-sec.workers.dev/profile-photo.png",
       address: {
         "@type": "PostalAddress",
         addressCountry: "DE",
@@ -734,7 +734,7 @@ export const seoConfig = {
       name: "Danny Safaya – Security Engineer Portfolio",
       alternateName:
         "Danny Safaya – Security Engineer & Penetration Tester Portfolio",
-      url: "https://danny-lli.github.io/DannySec",
+      url: "https://portfolio.danny-sec.workers.dev",
       author: { "@type": "Person", name: "Danny Safaya" },
       description:
         "Professional portfolio of Danny Safaya, Security Engineer and Penetration Testing Expert based in Germany. 3+ years securing telecom, payment and enterprise systems. Featured projects: PCI-DSS E-Payment Gateway (100/100) and HTBHound open-source recon tool.",
@@ -742,7 +742,7 @@ export const seoConfig = {
       potentialAction: {
         "@type": "SearchAction",
         target:
-          "https://danny-lli.github.io/DannySec/#search?q={search_term_string}",
+          "https://portfolio.danny-sec.workers.dev/#search?q={search_term_string}",
         "query-input": "required name=search_term_string",
       },
     },
@@ -755,61 +755,61 @@ export const seoConfig = {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://danny-lli.github.io/DannySec/",
+          item: "https://portfolio.danny-sec.workers.dev/",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "About",
-          item: "https://danny-lli.github.io/DannySec/#about",
+          item: "https://portfolio.danny-sec.workers.dev/#about",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "Skills",
-          item: "https://danny-lli.github.io/DannySec/#skills",
+          item: "https://portfolio.danny-sec.workers.dev/#skills",
         },
         {
           "@type": "ListItem",
           position: 4,
           name: "Experience",
-          item: "https://danny-lli.github.io/DannySec/#experience",
+          item: "https://portfolio.danny-sec.workers.dev/#experience",
         },
         {
           "@type": "ListItem",
           position: 5,
           name: "Projects",
-          item: "https://danny-lli.github.io/DannySec/#projects",
+          item: "https://portfolio.danny-sec.workers.dev/#projects",
         },
         {
           "@type": "ListItem",
           position: 6,
           name: "Education",
-          item: "https://danny-lli.github.io/DannySec/#education",
+          item: "https://portfolio.danny-sec.workers.dev/#education",
         },
         {
           "@type": "ListItem",
           position: 7,
           name: "Certifications",
-          item: "https://danny-lli.github.io/DannySec/#certifications",
+          item: "https://portfolio.danny-sec.workers.dev/#certifications",
         },
         {
           "@type": "ListItem",
           position: 8,
           name: "Volunteer",
-          item: "https://danny-lli.github.io/DannySec/#volunteer",
+          item: "https://portfolio.danny-sec.workers.dev/#volunteer",
         },
         {
           "@type": "ListItem",
           position: 9,
           name: "Awards",
-          item: "https://danny-lli.github.io/DannySec/#awards",
+          item: "https://portfolio.danny-sec.workers.dev/#awards",
         },
         {
           "@type": "ListItem",
           position: 10,
           name: "Contact",
-          item: "https://danny-lli.github.io/DannySec/#contact",
+          item: "https://portfolio.danny-sec.workers.dev/#contact",
         },
       ],
     },
@@ -823,7 +823,7 @@ export const seoConfig = {
       "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
     bingbot:
       "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
-    canonical: "https://danny-lli.github.io/DannySec",
+    canonical: "https://portfolio.danny-sec.workers.dev",
     geo: {
       region: "DE",
       placename: "Germany",
@@ -844,9 +844,9 @@ export const seoConfig = {
 
   // ─── hreflang ─────────────────────────────────────────────────────────────
   hreflang: [
-    { lang: "en", url: "https://danny-lli.github.io/DannySec" },
-    { lang: "de", url: "https://danny-lli.github.io/DannySec/de" },
-    { lang: "x-default", url: "https://danny-lli.github.io/DannySec" },
+    { lang: "en", url: "https://portfolio.danny-sec.workers.dev/?lang=en" },
+    { lang: "de", url: "https://portfolio.danny-sec.workers.dev/?lang=de" },
+    { lang: "x-default", url: "https://portfolio.danny-sec.workers.dev" },
   ],
 };
 

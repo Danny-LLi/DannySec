@@ -8,53 +8,53 @@
   ═══════════════════════════════════════════════════════════════════ -->
 
   <url>
-    <loc>https://danny-lli.github.io/DannySec/</loc>
+    <loc>https://portfolio.danny-sec.workers.dev/</loc>
     <image:image>
-      <image:loc>https://danny-lli.github.io/DannySec/og-image.jpg</image:loc>
+      <image:loc>https://portfolio.danny-sec.workers.dev/og-image.jpg</image:loc>
       <image:title>Danny Safaya – Security Engineer &amp; Penetration Tester | Germany / Deutschland</image:title>
       <image:caption>Professional cybersecurity portfolio: PTES, SIEM, EDR, Zero Trust, PCI-DSS. | Professionelles Cybersecurity-Portfolio: PTES, SIEM, EDR, Zero-Trust, PCI-DSS.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://danny-lli.github.io/DannySec/profile-photo.png</image:loc>
+      <image:loc>https://portfolio.danny-sec.workers.dev/profile-photo.png</image:loc>
       <image:title>Danny Safaya – Profile Photo | Profilfoto</image:title>
       <image:caption>Danny Safaya, Security Engineer und Penetration Tester in Deutschland.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://danny-lli.github.io/DannySec/twitter-card.jpg</image:loc>
+      <image:loc>https://portfolio.danny-sec.workers.dev/twitter-card.jpg</image:loc>
       <image:title>Danny Safaya – Twitter / X Card</image:title>
       <image:caption>Security Engineer · 3+ years · PTES, SIEM, EDR, Zero Trust, PCI-DSS · Germany.</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://danny-lli.github.io/DannySec/#projects</loc>
+    <loc>https://portfolio.danny-sec.workers.dev/#projects</loc>
     <image:image>
-      <image:loc>https://danny-lli.github.io/DannySec/assets/project-payment.jpg</image:loc>
+      <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-payment.jpg</image:loc>
       <image:title>Secure E-Payment Gateway – PCI-DSS | Sicheres E-Payment-Gateway – PCI-DSS</image:title>
       <image:caption>PCI-DSS-compliant tokenisation blocking 95%+ attacks. University 1st place, 100/100. | PCI-DSS-konformes Tokenisierungs-Gateway. Platz 1, 100/100.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://danny-lli.github.io/DannySec/assets/project-htb.jpg</image:loc>
+      <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-htb.jpg</image:loc>
       <image:title>HTBHound – Hack The Box Enumeration Tool | Reconnaissance-Tool</image:title>
       <image:caption>Open-source subdomain and directory discovery for Hack The Box. | Open-Source-Subdomain- und Verzeichniserkennung für HackTheBox.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://danny-lli.github.io/DannySec/assets/project-network.jpg</image:loc>
+      <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-network.jpg</image:loc>
       <image:title>Network Security – Penetration Testing | Netzwerksicherheit – Penetrationstest</image:title>
       <image:caption>Enterprise network security and penetration testing projects. | Unternehmens-Netzwerksicherheit und Penetrationstests.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://danny-lli.github.io/DannySec/assets/project-code.jpg</image:loc>
+      <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-code.jpg</image:loc>
       <image:title>Security Code Review &amp; Automation | Sicherheits-Code-Review &amp; Automatisierung</image:title>
       <image:caption>Custom exploit tools and automation scripts in Python, Bash, PowerShell. | Maßgeschneiderte Exploit-Tools und Automatisierungsskripte.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://danny-lli.github.io/DannySec/assets/project-linux.jpg</image:loc>
+      <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-linux.jpg</image:loc>
       <image:title>Linux Security Automation Suite | Linux-Sicherheitsautomatisierung</image:title>
       <image:caption>Linux hardening and automation for penetration testing workflows.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://danny-lli.github.io/DannySec/assets/project-privacy.jpg</image:loc>
+      <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-privacy.jpg</image:loc>
       <image:title>Kali Guardian – Privacy &amp; Security | Datenschutz &amp; Sicherheit</image:title>
       <image:caption>Privacy-focused security tooling built on Kali Linux.</image:caption>
     </image:image>
