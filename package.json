@@ -71,14 +71,14 @@
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.38.0",
     "input-otp": "^1.4.2",
-    "lucide-react": "^1.6.0",
+    "lucide-react": "^1.7.0",
     "next-themes": "^0.4.6",
     "react": "^19.2.4",
     "react-day-picker": "^9.14.0",
     "react-dom": "^19.2.4",
     "react-helmet-async": "^3.0.0",
     "react-hook-form": "^7.72.0",
-    "react-resizable-panels": "^4.7.6",
+    "react-resizable-panels": "^4.8.0",
     "react-router-dom": "^7.13.2",
     "recharts": "^3.8.1",
     "sonner": "^2.0.7",
@@ -107,8 +107,8 @@
     "tailwindcss": "^4.2.2",
     "typescript": "^6.0.2",
     "typescript-eslint": "^8.57.2",
-    "vite": "^8.0.2",
-    "vitest": "^4.1.1",
+    "vite": "^8.0.3",
+    "vitest": "^4.1.2",
     "@tailwindcss/postcss": "^4.2.2"
   }
 }

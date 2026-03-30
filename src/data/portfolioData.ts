@@ -6,7 +6,7 @@ export const contactInfo = {
   },
   links: {
     github: "https://github.com/Danny-LLi",
-    hackthebox: "https://app.hackthebox.com/profile/1416013",
+    hackthebox: "https://app.hackthebox.com/public/users/1416013",
     linkedin: "https://www.linkedin.com/in/danny-safaya-61302a218/",
     medium: "https://medium.com/@dannysafaya",
   },

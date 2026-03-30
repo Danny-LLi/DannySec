@@ -558,7 +558,7 @@ export const seoConfig = {
         "https://github.com/Danny-LLi",
         "https://www.linkedin.com/in/danny-safaya-61302a218/",
         "https://medium.com/@dannysafaya",
-        "https://app.hackthebox.com/profile/1416013",
+        "https://app.hackthebox.com/public/users/1416013",
       ],
       worksFor: {
         "@type": "Organization",
