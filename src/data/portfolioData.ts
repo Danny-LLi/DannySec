@@ -421,8 +421,8 @@ export const languages = [
       en: "German",
     },
     level: {
-      de: "B1 telc-Prüfung abgelegt (März 2026) · A2 zertifiziert",
-      en: "B1 telc exam completed (Mar 2026) · A2 certified",
+      de: "B1 (Zertifiziert), Tendenz zu B2",
+      en: "B1 (telc-Certified), tending to B2",
     },
   },
 ];
