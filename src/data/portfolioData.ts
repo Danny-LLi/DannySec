@@ -223,12 +223,16 @@ export const education = [
       en: "Damascus, Syria",
     },
     degree: {
-      de: "Master in Web Science",
-      en: "Master in Web Science",
+      de: "Master of Science – Web Science",
+      en: "Master's in Web Science",
     },
     period: {
       start: "Apr 2023",
-      end: null,
+      end: "Feb 2025",
+    },
+    modules: {
+      de: "7 von 10 Modulen abgeschlossen",
+      en: "7 of 10 modules completed",
     },
     recognized: true,
   },
@@ -259,7 +263,14 @@ export const projects = [
       de: "PCI DSS-konformes Zahlungsgateway mit Tokenisierung, das über 95% der Cyberangriffe durch sichere Entwicklung verhinderte. Gewann den ersten Platz im Universitätsprojekt mit einer perfekten Punktzahl von 100%.",
       en: "PCI DSS-compliant payment gateway with tokenization that prevented over 95% of cyberattacks through secure development. Won first place in university project with a perfect score of 100%.",
     },
-    technologies: ["PCI DSS", "Penetration Testing", "Tokenization", "PHP", "SQL", "Flutter"],
+    technologies: [
+      "PCI DSS",
+      "Penetration Testing",
+      "Tokenization",
+      "PHP",
+      "SQL",
+      "Flutter",
+    ],
     links: {
       linkedin: "https://www.linkedin.com/in/danny-safaya-61302a218/",
     },
@@ -433,125 +444,143 @@ export const certifications = [
     issuer: "Cybrary",
     issued: "May 2025",
     credentialId: "CC-b868f4b7-495a-496b-a7a8-8e4cbb4f2542",
-    credentialUrl: "https://drive.google.com/file/d/1idQJFqqqkDTmXkp71zdymY9bcYP6iTlQ/view?usp=sharing",
+    credentialUrl:
+      "https://drive.google.com/file/d/1idQJFqqqkDTmXkp71zdymY9bcYP6iTlQ/view?usp=sharing",
   },
   {
     name: "Securing Cloud and Hybrid Networks",
     issuer: "Coursera",
     issued: "Feb 2025",
     credentialId: "D0R7VW0FQ9UV",
-    credentialUrl: "https://drive.google.com/file/d/1zL1LRO6hKxWb72_SB33UJ5L2q37G4tnp/view?usp=drive_link",
+    credentialUrl:
+      "https://drive.google.com/file/d/1zL1LRO6hKxWb72_SB33UJ5L2q37G4tnp/view?usp=drive_link",
   },
   {
     name: "Automate Cybersecurity Tasks with Python",
     issuer: "Coursera",
     issued: "Nov 2024",
     credentialId: "0AN6BPB7O43D",
-    credentialUrl: "https://drive.google.com/file/d/1MZe8Gh7FiwZpMQXxEm0jmpzSPAyWya9M/view?usp=sharing",
+    credentialUrl:
+      "https://drive.google.com/file/d/1MZe8Gh7FiwZpMQXxEm0jmpzSPAyWya9M/view?usp=sharing",
   },
   {
     name: "Offensive Penetration Testing",
     issuer: "Cybrary",
     issued: "Oct 2024",
     credentialId: "CC-cf1349f6-6265-4fac-8b11-62ae769be741",
-    credentialUrl: "https://drive.google.com/file/d/10oqkX3GVD5zWN66NBx90yaf47C_4mGNH/view?usp=sharing",
+    credentialUrl:
+      "https://drive.google.com/file/d/10oqkX3GVD5zWN66NBx90yaf47C_4mGNH/view?usp=sharing",
   },
   {
     name: "Cloud Computing",
     issuer: "EC-Council",
     issued: "Sep 2024",
     credentialId: "67cb4a65-3089-4f1c-8ca5-dd87bae81810",
-    credentialUrl: "https://drive.google.com/file/d/1PCDhS6mFBy0Bc9odoSfP4bYEkW0DJ9Az/view?usp=drive_link",
+    credentialUrl:
+      "https://drive.google.com/file/d/1PCDhS6mFBy0Bc9odoSfP4bYEkW0DJ9Az/view?usp=drive_link",
   },
   {
     name: "ISO/IEC 27001:2022 Information Security Certified",
     issuer: "SkillFront",
     issued: "Sep 2024",
     credentialId: "74268967046394",
-    credentialUrl: "https://drive.google.com/file/d/1sRLFOhPeVkA4zcXYP49HPrqumSELY1Q-/view?usp=sharing",
+    credentialUrl:
+      "https://drive.google.com/file/d/1sRLFOhPeVkA4zcXYP49HPrqumSELY1Q-/view?usp=sharing",
   },
   {
     name: "Certified Cloud Security Professional (CCSP)",
     issuer: "Cybrary",
     issued: "Jul 2024",
     credentialId: "CC-cc359353-1bc1-4f6d-b0ec-44d5fec3ea38",
-    credentialUrl: "https://drive.google.com/file/d/1Wi46jzwPOsfmptMhkZrDmvkSShJEsXf1/view?usp=sharing",
+    credentialUrl:
+      "https://drive.google.com/file/d/1Wi46jzwPOsfmptMhkZrDmvkSShJEsXf1/view?usp=sharing",
   },
   {
     name: "Official (ISC)² Certified in Cybersecurity (CC)",
     issuer: "ISC2",
     issued: "Mar 2023",
     credentialId: "73ZGX83PAHT",
-    credentialUrl: "https://drive.google.com/file/d/1-CPDxt5ZoMXr2W1_z1ZDmJRkFe8TOr58/view?usp=share_link",
+    credentialUrl:
+      "https://drive.google.com/file/d/1-CPDxt5ZoMXr2W1_z1ZDmJRkFe8TOr58/view?usp=share_link",
   },
   {
     name: "Certified Information Security Manager (CISM)",
     issuer: "Cybrary",
     issued: "Oct 2023",
     credentialId: "CC-279986dd-a1a8-4a3d-8d5e-61b0d7ff45c9",
-    credentialUrl: "https://drive.google.com/file/d/1zoTMyWQ52H12__EJd3wVKh8yBLTMUlRj/view?usp=drivesdk",
+    credentialUrl:
+      "https://drive.google.com/file/d/1zoTMyWQ52H12__EJd3wVKh8yBLTMUlRj/view?usp=drivesdk",
   },
   {
     name: "Network Security",
     issuer: "Coursera",
     issued: "Jul 2023",
     credentialId: "72HR56228WM4",
-    credentialUrl: "https://drive.google.com/file/d/1Ek9VcLmm42u4c6LcVBQ4fwX4GmR7r5mj/view?usp=sharing",
+    credentialUrl:
+      "https://drive.google.com/file/d/1Ek9VcLmm42u4c6LcVBQ4fwX4GmR7r5mj/view?usp=sharing",
   },
   {
     name: "Python for Cybersecurity: Command-and-control, Exfiltration and Impact",
     issuer: "Coursera",
     issued: "Jul 2023",
     credentialId: "6KMSLYPMTGLA",
-    credentialUrl: "https://drive.google.com/file/d/1hHjg1RcMe3BAEiMyOoDx9EpjmyNX7Jf3/view?usp=sharing",
+    credentialUrl:
+      "https://drive.google.com/file/d/1hHjg1RcMe3BAEiMyOoDx9EpjmyNX7Jf3/view?usp=sharing",
   },
   {
     name: "Python for Cybersecurity: Credential Access, Discovery, Lateral Movement & Collection",
     issuer: "Coursera",
     issued: "Jun 2023",
     credentialId: "MCVZC2K7XAMH",
-    credentialUrl: "https://drive.google.com/file/d/1sRdya-AgfKcQz9Cy5lYPfcibhdeDnuQ2/view?usp=drive_link",
+    credentialUrl:
+      "https://drive.google.com/file/d/1sRdya-AgfKcQz9Cy5lYPfcibhdeDnuQ2/view?usp=drive_link",
   },
   {
     name: "Python for Cybersecurity: Execution, Persistence, Privilege Escalation and Evasion",
     issuer: "Coursera",
     issued: "Jun 2023",
     credentialId: "T2NMDC2BKP7V",
-    credentialUrl: "https://drive.google.com/file/d/1-P6lUqZfEvHnX2VbfJhk8oVHT7fHECTW/view?usp=sharing",
+    credentialUrl:
+      "https://drive.google.com/file/d/1-P6lUqZfEvHnX2VbfJhk8oVHT7fHECTW/view?usp=sharing",
   },
   {
     name: "Cyber Incident Response",
     issuer: "Coursera",
     issued: "Mar 2023",
     credentialId: "TJXJZ5YF2XXS",
-    credentialUrl: "https://drive.google.com/file/d/1-1YMjeG5F0nZmcQLMxPhpxNCL_GEiH8e/view?usp=share_link",
+    credentialUrl:
+      "https://drive.google.com/file/d/1-1YMjeG5F0nZmcQLMxPhpxNCL_GEiH8e/view?usp=share_link",
   },
   {
     name: "Cybersecurity Compliance Framework & System Administration",
     issuer: "Coursera",
     issued: "Mar 2023",
     credentialId: "XFLBMUX9S65Y",
-    credentialUrl: "https://drive.google.com/file/d/1-2VBNsChbkl1lG7eHLbVLq91m1MlWOT4/view?usp=share_link",
+    credentialUrl:
+      "https://drive.google.com/file/d/1-2VBNsChbkl1lG7eHLbVLq91m1MlWOT4/view?usp=share_link",
   },
   {
     name: "Ethical Hacking Essentials (EHE)",
     issuer: "Coursera",
     issued: "Mar 2023",
     credentialId: "U4XU8EH35TTCJ",
-    credentialUrl: "https://drive.google.com/file/d/1-6zsus_EFuK3LFCsutYsHtI2Astuz0Qb/view?usp=share_link",
+    credentialUrl:
+      "https://drive.google.com/file/d/1-6zsus_EFuK3LFCsutYsHtI2Astuz0Qb/view?usp=share_link",
   },
   {
     name: "Managing Cybersecurity Incidents and Disasters",
     issuer: "Coursera",
     issued: "Mar 2023",
     credentialId: "EY8ZVMGDUJ86",
-    credentialUrl: "https://drive.google.com/file/d/1-MDC37Z4tEP7eSc_EYTQYkqanKaAh2oq/view?usp=share_link",
+    credentialUrl:
+      "https://drive.google.com/file/d/1-MDC37Z4tEP7eSc_EYTQYkqanKaAh2oq/view?usp=share_link",
   },
   {
     name: "Penetration Testing and Ethical Hacking",
     issuer: "Cybrary",
     issued: "Mar 2023",
     credentialId: "CC-aa63165-0576-493f-8064-acac3e7a4662",
-    credentialUrl: "https://drive.google.com/file/d/1-MDC37Z4tEP7eSc_EYTQYkqanKaAh2oq/view?usp=share_link",
+    credentialUrl:
+      "https://drive.google.com/file/d/1-MDC37Z4tEP7eSc_EYTQYkqanKaAh2oq/view?usp=share_link",
   },
 ];
