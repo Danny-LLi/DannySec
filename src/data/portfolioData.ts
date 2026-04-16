@@ -411,8 +411,8 @@ export const languages = [
       en: "English",
     },
     level: {
-      de: "B2 (Zertifiziert), Tendenz zu C1",
-      en: "B2 (Certified), tending to C1",
+      de: "C1 (verhandlungssicher), B2 zertifiziert",
+      en: "C1 (business proficient), B2 certified",
     },
   },
   {
@@ -421,8 +421,8 @@ export const languages = [
       en: "German",
     },
     level: {
-      de: "B1 (Zertifiziert), Tendenz zu B2",
-      en: "B1 (telc-Certified), tending to B2",
+      de: "B2 (fortgeschritten), B1 zertifiziert",
+      en: "B2 (advanced), B1 certified",
     },
   },
 ];

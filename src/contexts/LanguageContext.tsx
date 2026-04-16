@@ -73,8 +73,8 @@ const translations = {
     "languages.title": "Sprachen",
     "languages.english": "Englisch",
     "languages.german": "Deutsch",
-    "languages.english_level": "B2 (Zertifiziert), Tendenz zu C1",
-    "languages.german_level": "B1 (Zertifiziert), Tendenz zu B2",
+    "languages.english_level": "C1 (verhandlungssicher), B2 zertifiziert",
+    "languages.german_level": "B2 (fortgeschritten), B1 zertifiziert",
 
     // Footer
     "footer.rights": "Alle Rechte vorbehalten.",
@@ -148,8 +148,8 @@ const translations = {
     "languages.title": "Languages",
     "languages.english": "English",
     "languages.german": "German",
-    "languages.english_level": "B2 (Certified), tending to C1",
-    "languages.german_level": "B1 (telc-Certified), tending to B2",
+    "languages.english_level": "C1 (business proficient), B2 certified",
+    "languages.german_level": "B2 (advanced), B1 certified",
 
     // Footer
     "footer.rights": "All rights reserved.",

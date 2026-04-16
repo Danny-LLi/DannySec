@@ -2,51 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- ══════════════════════════════════════════════════════════════════
-       Danny Safaya — Image Sitemap
-       Bilingual titles & captions (EN + DE)
-  ═══════════════════════════════════════════════════════════════════ -->
-
   <url>
     <loc>https://portfolio.danny-sec.workers.dev/</loc>
     <image:image>
       <image:loc>https://portfolio.danny-sec.workers.dev/og-image.jpg</image:loc>
-      <image:title>Danny Safaya – Security Engineer &amp; Penetration Tester | Germany / Deutschland</image:title>
-      <image:caption>Professional cybersecurity portfolio: PTES, SIEM, EDR, Zero Trust, PCI-DSS. | Professionelles Cybersecurity-Portfolio: PTES, SIEM, EDR, Zero-Trust, PCI-DSS.</image:caption>
+      <image:title>Danny Safaya – Security Engineer & Penetration Tester | Germany / Deutschland</image:title>
+      <image:caption>Professional cybersecurity portfolio: PTES, SIEM, EDR, Zero Trust, PCI-DSS. | Professionelles Cybersecurity-Portfolio.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://portfolio.danny-sec.workers.dev/profile-photo.png</image:loc>
       <image:title>Danny Safaya – Profile Photo | Profilfoto</image:title>
-      <image:caption>Danny Safaya, Security Engineer und Penetration Tester in Deutschland.</image:caption>
+      <image:caption>Security Engineer und Penetration Tester in Deutschland.</image:caption>
     </image:image>
-    <image:image>
-      <image:loc>https://portfolio.danny-sec.workers.dev/twitter-card.jpg</image:loc>
-      <image:title>Danny Safaya – Twitter / X Card</image:title>
-      <image:caption>Security Engineer · 3+ years · PTES, SIEM, EDR, Zero Trust, PCI-DSS · Germany.</image:caption>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://portfolio.danny-sec.workers.dev/#projects</loc>
     <image:image>
       <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-payment.jpg</image:loc>
       <image:title>Secure E-Payment Gateway – PCI-DSS | Sicheres E-Payment-Gateway – PCI-DSS</image:title>
-      <image:caption>PCI-DSS-compliant tokenisation blocking 95%+ attacks. University 1st place, 100/100. | PCI-DSS-konformes Tokenisierungs-Gateway. Platz 1, 100/100.</image:caption>
+      <image:caption>PCI-DSS-compliant tokenisation blocking 95%+ attacks. 1st place, 100/100. | Platz 1, 100/100.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-htb.jpg</image:loc>
-      <image:title>HTBHound – Hack The Box Enumeration Tool | Reconnaissance-Tool</image:title>
-      <image:caption>Open-source subdomain and directory discovery for Hack The Box. | Open-Source-Subdomain- und Verzeichniserkennung für HackTheBox.</image:caption>
+      <image:title>HTBHound – Hack The Box Enumeration Tool</image:title>
+      <image:caption>Open-source subdomain & directory discovery for Hack The Box. | Open-Source Reconnaissance-Tool für HackTheBox.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-network.jpg</image:loc>
-      <image:title>Network Security – Penetration Testing | Netzwerksicherheit – Penetrationstest</image:title>
-      <image:caption>Enterprise network security and penetration testing projects. | Unternehmens-Netzwerksicherheit und Penetrationstests.</image:caption>
+      <image:title>Network Security – Penetration Testing | Netzwerksicherheit</image:title>
+      <image:caption>Enterprise network security and penetration testing projects.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-code.jpg</image:loc>
-      <image:title>Security Code Review &amp; Automation | Sicherheits-Code-Review &amp; Automatisierung</image:title>
-      <image:caption>Custom exploit tools and automation scripts in Python, Bash, PowerShell. | Maßgeschneiderte Exploit-Tools und Automatisierungsskripte.</image:caption>
+      <image:title>Security Code Review & Automation | Code-Review & Automatisierung</image:title>
+      <image:caption>Custom exploit tools and automation scripts in Python, Bash, PowerShell.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-linux.jpg</image:loc>
@@ -55,7 +41,7 @@
     </image:image>
     <image:image>
       <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-privacy.jpg</image:loc>
-      <image:title>Kali Guardian – Privacy &amp; Security | Datenschutz &amp; Sicherheit</image:title>
+      <image:title>Kali Guardian – Privacy & Security | Datenschutz & Sicherheit</image:title>
       <image:caption>Privacy-focused security tooling built on Kali Linux.</image:caption>
     </image:image>
   </url>
