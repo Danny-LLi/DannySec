@@ -12,6 +12,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const DOMAIN = "https://portfolio.danny-sec.workers.dev";
+
+const escapeXml = (str) =>
+  str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const TODAY = new Date().toISOString().split("T")[0];
 const OUTPUT_PATH = path.join(__dirname, "../public/sitemap.xml");
 const IMAGE_OUTPUT_PATH = path.join(__dirname, "../public/sitemap-images.xml");
@@ -104,8 +107,8 @@ const generateImageSitemap = () => {
   images.forEach((img) => {
     xml += "    <image:image>\n";
     xml += `      <image:loc>${DOMAIN}${img.loc}</image:loc>\n`;
-    xml += `      <image:title>${img.title}</image:title>\n`;
-    xml += `      <image:caption>${img.caption}</image:caption>\n`;
+    xml += `      <image:title>${escapeXml(img.title)}</image:title>\n`;
+    xml += `      <image:caption>${escapeXml(img.caption)}</image:caption>\n`;
     xml += "    </image:image>\n";
   });
   xml += "  </url>\n\n";
