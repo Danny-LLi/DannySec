@@ -1,15 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
     <loc>https://portfolio.danny-sec.workers.dev/</loc>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://portfolio.danny-sec.workers.dev/?lang=en" />
-    <xhtml:link rel="alternate" hreflang="de"        href="https://portfolio.danny-sec.workers.dev/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.danny-sec.workers.dev/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://portfolio.danny-sec.workers.dev/?lang=de" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio.danny-sec.workers.dev/" />
+    <image:image>
+      <image:loc>https://portfolio.danny-sec.workers.dev/assets/profile-photo.png</image:loc>
+      <image:title>Danny Safaya – Profile Photo | Profilfoto</image:title>
+      <image:caption>Danny Safaya, Security Engineer und Penetration Tester in Deutschland.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-payment.jpg</image:loc>
+      <image:title>Secure E-Payment Gateway – PCI-DSS | Sicheres E-Payment-Gateway – PCI-DSS</image:title>
+      <image:caption>PCI-DSS-compliant tokenisation blocking 95%+ attacks. 1st place, 100/100. | Platz 1, 100/100.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-htb.jpg</image:loc>
+      <image:title>HTBHound – Hack The Box Enumeration Tool</image:title>
+      <image:caption>Open-source subdomain &amp; directory discovery for Hack The Box. | Open-Source Reconnaissance-Tool fuer HackTheBox.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-network.jpg</image:loc>
+      <image:title>Network Security – Penetration Testing | Netzwerksicherheit</image:title>
+      <image:caption>Enterprise network security and penetration testing projects.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-code.jpg</image:loc>
+      <image:title>Security Code Review and Automation | Code-Review und Automatisierung</image:title>
+      <image:caption>Custom exploit tools and automation scripts in Python, Bash, PowerShell.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-linux.jpg</image:loc>
+      <image:title>Linux Security Automation Suite | Linux-Sicherheitsautomatisierung</image:title>
+      <image:caption>Linux hardening and automation for penetration testing workflows.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://portfolio.danny-sec.workers.dev/assets/project-privacy.jpg</image:loc>
+      <image:title>Kali Guardian – Privacy and Security | Datenschutz und Sicherheit</image:title>
+      <image:caption>Privacy-focused security tooling built on Kali Linux.</image:caption>
+    </image:image>
   </url>
 
 </urlset>

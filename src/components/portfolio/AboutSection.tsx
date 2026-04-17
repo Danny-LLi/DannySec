@@ -54,7 +54,6 @@ const AnimatedCounter = ({
   useEffect(() => {
     if (!isInView) return;
     
-    // Faster animation with fewer steps
     const duration = 1000;
     const steps = 30;
     const increment = value / steps;
@@ -81,7 +80,6 @@ const AnimatedCounter = ({
 const AboutSection = () => {
   const { t, language } = useLanguage();
   const sectionRef = useRef(null);
-  // Optimized: trigger earlier (0.1 amount), only once, no negative margin
   const isInView = useInView(sectionRef, { once: true, margin: "0px", amount: 0.1 });
 
   return (
@@ -93,7 +91,7 @@ const AboutSection = () => {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
       
-      {/* Static gradient overlays - removed animations for performance */}
+      {/* Static gradient overlays */}
       <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-primary/8 rounded-full blur-[100px]" />
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-accent/8 rounded-full blur-[80px]" />
       
@@ -102,7 +100,7 @@ const AboutSection = () => {
       
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-16 items-center mb-12 sm:mb-24">
-          {/* Image Grid - Simplified animations */}
+          {/* Image Grid */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -171,7 +169,7 @@ const AboutSection = () => {
           </motion.div>
         </div>
 
-        {/* Stats Grid - Simplified animations */}
+        {/* Stats Grid */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {stats.map((stat, index) => (
             <motion.div
@@ -201,7 +199,7 @@ const AboutSection = () => {
                   isInView={isInView} 
                 />
               </motion.div>
-              <div className="text-muted-foreground text-xs sm:text-sm">{stat.label[language]}</div>
+              <div className="text-muted-foreground text-xs sm:text-sm">{stat.label[language as keyof typeof stat.label]}</div>
             </motion.div>
           ))}
         </div>

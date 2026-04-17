@@ -58,7 +58,7 @@ Crawl-delay: 1
 
 # ── Sitemaps ──────────────────────────────────────────────────────────
 Sitemap: https://portfolio.danny-sec.workers.dev/sitemap.xml
-Sitemap: https://portfolio.danny-sec.workers.dev/sitemap-images.xml
+# Sitemap: https://portfolio.danny-sec.workers.dev/sitemap-images.xml
 
 # ── Canonical host ────────────────────────────────────────────────────
 Host: https://portfolio.danny-sec.workers.dev
