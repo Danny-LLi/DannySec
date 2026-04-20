@@ -157,9 +157,17 @@ const EducationSection = () => {
                   <span className="gradient-text font-semibold">
                     {edu.grade}
                   </span>
+                  {edu.topPercent && (
+                    <span className="text-muted-foreground ml-2">
+                      · 🏆{" "}
+                      <span className="gradient-text font-medium">
+                        {edu.topPercent[language]}
+                      </span>
+                    </span>
+                  )}
                 </div>
               )}
-              
+
               {edu.modules && (
                 <div className="text-sm text-muted-foreground mt-2">
                   📋 {edu.modules[language]}
@@ -177,6 +185,15 @@ const EducationSection = () => {
                   <CheckCircle className="w-4 h-4 text-primary" />
                   <span className="gradient-text font-medium">
                     {t("education.recognized")}
+                  </span>
+                </div>
+              )}
+
+              {edu.zabRecognized && (
+                <div className="flex items-center gap-2 text-sm mt-2">
+                  <CheckCircle className="w-4 h-4 text-primary" />
+                  <span className="gradient-text font-medium">
+                    {language === "de" ? "ZAB-anerkannt" : "ZAB-recognised"}
                   </span>
                 </div>
               )}

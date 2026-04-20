@@ -252,6 +252,11 @@ export const education = [
     },
     grade: "74.4%",
     recognized: true,
+    zabRecognized: true,
+    topPercent: {
+    de: "Top 10 % von 120 Studierenden",
+    en: "Top 10% of 120 students",
+  },
   },
 ];
 
